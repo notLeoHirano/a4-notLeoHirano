@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P";
+}
+
+body, .body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full screen height */
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack title and content */
+}
+
+.nes-btn, .nes-input, .nes-textarea, .nes-select {
+  font-size: 12px;
+}
+
+p {
+  font-size: 8px;
+}
+
+label, b {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#info, #table-container {
+  font-size: 6px;
+  width: 20%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+table {
+  width: 95%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  max-width: 25%;
+  overflow: hidden;
+}
+
+th {
+  font-weight: bold;
+}
+
+td {
+  cursor: pointer;
+}
+
+th:nth-child(5) {
+  max-width: 10%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#info h1, #info p {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea {
+  height: 80px;
+}
+
+#canvas {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 45%);
+  gap: 10px;
+  padding: 10px;
+  overflow-y: hidden;
+}
+
+.gallery-item {
+  border: 2px solid white;
+  padding: 10px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.01);
+}
+
+
+.gallery-info {
+  text-align: center;
+}
+
+
