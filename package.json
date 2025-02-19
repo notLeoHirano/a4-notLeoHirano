@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next-auth/mongodb-adapter": "^1.1.3",
+    "@types/css-modules": "^1.0.5",
     "mongoose": "^8.10.1",
     "nes.css": "^2.2.1",
     "next": "15.1.7",
