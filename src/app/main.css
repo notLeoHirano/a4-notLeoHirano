@@ -7,11 +7,27 @@ body {
 body, .body {
   margin: 0;
   padding: 0;
-  height: 100vh; /* Full screen height */
+  height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: column; /* Stack title and content */
+  flex-direction: row;
 }
+
+#toggledata {
+  position: fixed;
+  left: 8px;
+  bottom: 8px;
+
+}
+
+#gallery {
+  z-index: 9999;
+
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+}
+
 
 .nes-btn, .nes-input, .nes-textarea, .nes-select {
   font-size: 12px;
